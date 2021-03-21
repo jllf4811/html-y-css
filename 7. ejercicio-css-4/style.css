@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+header{
+    animation-name: inicio;
+    animation-duration: 1s;
+}
+main{
+    animation-name: inicio;
+    animation-duration: 3s;
+}
+@keyframes inicio{
+    0%{
+        filter: opacity(0%);
+    }
+    75%{
+        filter: opacity(60%);
+    }
+    100%{
+        filter: opacity(100%);
+    }
+}
+body{
+    background-color: sandybrown;
+    display: grid;
+    grid-template-areas:'header'
+                        'main';
+    
+}
+header{
+    color: white;
+    grid-area: header;
+    font-size: 3rem;
+    text-align: center;
+
+}
+main{
+    grid-area: main;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+main article{
+    width: 20%;
+    background-color: white;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 5px 10px black;
+}
+.imagen_perfil{
+    padding: 1rem;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    
+}
+nav{
+    margin: 1rem 0rem;
+}
+nav ol li a{
+    list-style: none;
+    padding: 0.5rem;
+}
+nav ol li{
+    display: inline;
+    list-style: none;
+}
+nav ol li a img{
+    filter: grayscale(100%);
+    width: 2rem;
+    border-radius: 50%;
+    
+}
+
+p{
+
+    font-size: 0.75rem;
+    padding: 2rem;
+    color: white;
+    background-color: blueviolet;
+}
+
+article:hover{
+    animation-name: aumento;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes aumento{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}

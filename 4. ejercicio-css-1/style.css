@@ -1,0 +1,41 @@
+ul:first-of-type li:last-of-type{
+    background: rgb(9, 13, 224);
+}
+ul:first-of-type li:nth-child(odd){
+    text-decoration: underline green;
+}
+ul:first-of-type li{
+    display:inline-block;
+    margin-right: 10px;
+}
+ul:first-of-type li{
+    list-style: upper-roman;
+}
+ul:first-of-type li:lang(en){
+    text-transform: uppercase;
+    font-size: 200%;
+}
+ul:first-of-type li:first-of-type:after{
+    content: '🍩';
+}
+ul:first-of-type li:nth-child(2):after{
+    content: '💭';
+}
+ul:first-of-type li:nth-child(3):after{
+    content: '😈';
+}
+ul:first-of-type li:nth-child(4):after{
+    content: '🌍';
+}
+ul:first-of-type li:nth-child(5):after{
+    content: '🥮';
+}
+ul:first-of-type li:last-of-type:after{
+    content: '🐶';
+}
+#provincias li{
+    list-style: upper-roman;
+}
+#provincias li:nth-of-type(2){
+    list-style: none;
+}

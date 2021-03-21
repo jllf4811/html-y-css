@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio HTML 1</title>
+</head>
+<body>
+<form action=".php" method="GET">
+  <fieldset>
+    <legend><label for="nombre">Nombre</label></legend>
+    <input type="text" name="nombre" id="nombre" autofocus>
+  </fieldset>
+  <fieldset>
+    <legend><label for="correo_electronico">Correo electrónico</label></legend>
+    <input type="email" name="correo_electronico" id="correo_electronico" required>
+  </fieldset>
+  <fieldset>
+    <legend><label for="url">URL</label></legend>
+    <input type="url" name="url" id="url" placeholder="Escribe la URL de tu página web personal">
+  </fieldset>
+  <fieldset>
+    <legend><label for="date">Fecha</label></legend>
+    <input type="date" name="date" id="date">
+  </fieldset>
+  <fieldset>
+    <legend><label for="tiempo">Tiempo</label></legend>
+    <input type="time" name="tiempo" id="tiempo">
+  </fieldset>
+  <fieldset>
+    <legend><label for="fecha_hora">Fecha y hora</label></legend>
+    <input type="datetime-local" name="fecha_hora" id="fecha_hora">
+  </fieldset>
+  <fieldset>
+    <legend><label for="mes">Mes</label></legend>
+    <input type="month" name="mes" id="mes">
+  </fieldset>
+  <fieldset>
+    <legend><label for="semana">Semana</label></legend>
+    <input type="week" name="semana" id="semana">
+  </fieldset>
+  <fieldset>
+    <legend><label for="numero">Numero</label></legend>
+    <input type="number" name="numero" id="numero" min="-10" max="10">
+  </fieldset>
+  <fieldset>
+    <legend><label for="telefono">Teléfono</label></legend>
+    <input type="tel" name="telefono" id="telefono" value="98502756" readonly>
+  </fieldset>
+  <fieldset>
+    <legend><label for="termino_de_busqueda">Término de búsqueda</label></legend>
+    <input type="search" name="termino_de_busqueda" id="termino_de_busqueda" disabled>
+  </fieldset>
+  <fieldset>
+    <legend><label for="color_favorito">Color favorito</label></legend>
+    <input type="color" name="color_favorito" id="color_favorito">
+  </fieldset>
+  <button>Enviar</button>
+</form>
+
+</body>
+</html>
